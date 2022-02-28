@@ -15,7 +15,7 @@ ReactDOM.render(
         <Route path='/' element={<App/>}>
           <Route index element={<LandingPage />} />
           <Route path='details/:planetId' element={<PlanetDetails />} />
-          <Route path='bookNow' element={<BookNow />} />
+          <Route path='details/:planetId/booknow' element={<BookNow />} />
         </Route>
       </Routes>
     </BrowserRouter>
