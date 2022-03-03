@@ -1,10 +1,10 @@
 import Planet from "./planet";
-import PlanetData from '../../../data/planets';
+import planetData from '../../../data/planets';
 
 const Planets = () => {
     return (
         <section className='planets'>
-            { PlanetData.map((e, i) => <Planet key={i} planet={e} /> )}
+            { planetData.map((e, i) => <Planet key={i} planet={e} /> )}
         </section>
     );
 }
