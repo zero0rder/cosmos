@@ -1,0 +1,98 @@
+/* LANDING PAGE */
+.landing-page {
+    display: flex;
+    justify-content: center;
+}
+
+.planets {
+    width: 30%;
+    padding: 1rem;
+}
+
+section.planet {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: lightblue;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+section.planet:hover {
+    background-color: #eee;
+}
+
+section.planet a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.landing-page .galaxy-container {
+    width: 70%;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+/* DETAILS PAGE */
+.detail-content {
+    display: flex;
+    justify-content: center;
+}
+
+.planet-details-list {
+    width: 40%;
+    padding: 1rem;
+}
+
+.planet-details-list ul {
+    background-color: lightblue;
+    margin: 0;
+    padding: 1rem;
+    padding-left: 1.5rem;
+}
+
+.planet-details-list ul li {
+    line-height: 25px;
+    font-size: 0.85rem;
+}
+
+.planet-details-list ul li span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.detail-content .galaxy-container {
+    width: 60%;
+    padding: 1rem;
+}
+
+.planet-details-page header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.planet-details-page header span {
+    font-size: 2.5rem;
+    background-color: lightblue;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    border: 1px solid #eee;
+}
+
+.buynow-button {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.buynow-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
