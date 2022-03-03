@@ -6,7 +6,7 @@ const LandingPage = () => {
     return (
         <section className='landing-page'>
             <Planets />
-            {/* <Galaxy /> */}
+            <Galaxy />
         </section>
     );
 }
