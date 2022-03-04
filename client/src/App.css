@@ -9,6 +9,18 @@
     padding: 1rem;
 }
 
+.planets header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.planets header span {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 section.planet {
     text-align: center;
     padding: 0.5rem;
@@ -96,3 +108,73 @@ section.planet a {
     border-radius: 5px;
 }
 
+.buynow-button a:hover {
+    background-color: forestgreen;
+}
+
+/* BUYNOW PAGE */
+.form-container {
+    max-width: 600px;
+    margin: 5rem auto;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border: 1px solid;
+    width: auto;
+    border-radius: 5px;
+}
+
+.form-container form label {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.form-container form label span {
+    font-weight: 600;
+}
+
+.form-container form label input,
+.form-container form label select,
+.form-container form label textarea {
+    display: block;
+    margin: 0.5rem auto;
+    width: 75%;
+}
+
+.form-container form label.message-label {
+    width: 100%;
+}
+
+.form-container form label.message-label textarea {
+    height: 5rem;
+}
+
+.submit-container {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.submit-container input {
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: orangered;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid;
+}
+
+.submit-container input:hover {
+    background-color: forestgreen;
+}
