@@ -5,6 +5,7 @@ import App from './App';
 import LandingPage from './components/pages/landingPage';
 import PlanetDetails from './components/pages/planetDetails';
 import BookNow from './components/pages/bookNow';
+import Confirmation from './components/pages/confirmation';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
           <Route index element={<LandingPage />} />
           <Route path='details/:planetId' element={<PlanetDetails />} />
           <Route path='details/:planetId/booknow' element={<BookNow />} />
+          <Route path='confirmation' element={<Confirmation />} />
         </Route>
       </Routes>
     </BrowserRouter>

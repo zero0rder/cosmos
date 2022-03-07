@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import shipData from '../../data/ships';
 
 let initialFormState = {
@@ -13,10 +13,11 @@ let initialFormState = {
 const BookNow = () => {
     const [formState, setFormState ] = useState(initialFormState);
     const { planetId } = useParams();
+    const navigate = useNavigate();
     
     const submitForm = (e) => {
         e.preventDefault();
-        console.log('submit', formState);
+        navigate('/confirmation', { state: { planet: planetId, formData: formState } })
     }
 
     const handleChange = (e) => {
