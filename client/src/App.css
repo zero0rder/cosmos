@@ -175,6 +175,71 @@ section.planet a {
     border: 1px solid;
 }
 
-.submit-container input:hover {
+.submit-container input:hover,
+.goto-account-btn button:hover  {
     background-color: forestgreen;
+}
+
+.confirmation-section p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.confirmation-section > div {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmation-section table {
+    border: 1px solid #B5B7BA;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 5px;
+    min-width: 350px;
+}
+
+.confirmation-section table thead {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #B5B7BA;
+    padding-bottom: 0.5rem;
+}
+
+.confirmation-section table thead td {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.confirmation-section table tbody tr {
+    display: flex;
+}
+
+.confirmation-section table tbody td {
+    padding: 0.5rem;
+}
+
+.confirmation-section table tbody td:first-child {
+    width: 35%;
+    font-weight: 600;
+}
+
+.confirmation-section table tbody td:last-child {
+    width: 65%;
+}
+
+.goto-account-btn {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.goto-account-btn button {
+    padding: 0.5rem 1.5rem;
+    background-color: orangered;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
 }
