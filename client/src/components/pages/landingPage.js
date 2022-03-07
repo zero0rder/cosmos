@@ -4,10 +4,15 @@ import Planets from "../galaxy/planets/planets";
 const LandingPage = () => {
 
     return (
-        <section className='landing-page'>
-            <Planets />
-            <Galaxy />
-        </section>
+        <>
+            <header className='main-header-title'>
+                <h1>"Travel Amongst The Stars!"</h1>
+            </header>
+            <section className='landing-page'>
+                <Planets />
+                <Galaxy />
+            </section>
+        </>
     );
 }
 

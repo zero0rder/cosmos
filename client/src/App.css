@@ -1,4 +1,8 @@
 /* LANDING PAGE */
+.main-header-title > header {
+    text-align: center;
+}
+
 .landing-page {
     display: flex;
     justify-content: center;
@@ -39,6 +43,7 @@ section.planet a {
     color: #000;
     font-weight: 600;
     text-transform: uppercase;
+    display: block;
 }
 
 .landing-page .galaxy-container {
