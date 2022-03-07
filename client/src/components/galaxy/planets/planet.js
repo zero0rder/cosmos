@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-const Planet = ({ planet }) => {
+const Planet = ({ planetName }) => {
 
     return (
         <section className='planet'>
             <div>
-                <Link to={ 'details/' + planet.name } state={{ description: planet.description }}>
-                    { planet.name }
+                <Link to={ 'details/' + planetName }>
+                    { planetName }
                 </Link>
             </div>
         </section>

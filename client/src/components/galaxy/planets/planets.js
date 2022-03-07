@@ -7,7 +7,7 @@ const Planets = () => {
             <header>
                 <span>Destinations</span>
             </header>
-            { planetData.map((e, i) => <Planet key={i} planet={e} /> )}
+            { planetData.map((e, i) => <Planet key={i} planetName={e.name} /> )}
         </section>
     );
 }
