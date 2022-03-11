@@ -41,9 +41,6 @@ const Confirmation = () => {
                     </table>
                 </div>
             </section>
-            <div className="goto-account-btn">
-                <button>Go to Account</button>
-            </div>
         </section>
     );
 }
