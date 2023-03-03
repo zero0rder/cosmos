@@ -1,10 +1,10 @@
-# Interstellar 🚀
+# Cosmos 🚀
 
-## A SpaceX Server built with Apollo GraphQL
+## A Space Tourism UI
 
 ### Quick Start
 
-- [x] `git clone git@github.com:zero0rder/interstellar.git`
+- [x] `git clone git@github.com:zero0rder/cosmos.git`
 - [x] `cd server`
 - [x] `npm install`
 - [x] `npm run start`
