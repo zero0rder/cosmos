@@ -54,4 +54,7 @@ main > section {
     background-image: url('./assets/space_mobile.jpg');
   }
   
+  main > section {
+    padding-top: 6rem;
+  }
 }

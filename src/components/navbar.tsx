@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
-import Icon from "../components/icon";
+import { useNavigate, useLocation } from "react-router-dom";
+// import Icon from "../components/icon";
 
 interface NavbarProps {}
 
@@ -16,6 +16,7 @@ const tabs = [
 const Navbar: React.FC<NavbarProps> = ({}) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNavigate = (path: string) => {
     if (isModalOpen) setIsModalOpen((prev) => !prev);
@@ -24,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 
   return (
     <>
-      <Icon />
+      {/* <Icon /> */}
       <header className="absolute right-0 top-8 w-auto z-20">
         {isModalOpen ? (
           <AiOutlineClose
@@ -42,11 +43,17 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
             {tabs.map((t, i) => (
               <li
                 key={i}
-                className="flex gap-x-4 font-['Barlow_Condensed'] cursor-pointer hover:font-bold"
+                className="flex gap-x-4 font-['Barlow_Condensed'] cursor-pointer"
                 onClick={() => handleNavigate(t.path)}
               >
                 <span className="font-bold">0{i}</span>
-                <span className="uppercase tracking-[0.2rem]">{t.title}</span>
+                <span
+                  className={`uppercase tracking-[0.2rem] ${
+                    location.pathname === t.path && "border-b-2 pb-1"
+                  }`}
+                >
+                  {t.title}
+                </span>
               </li>
             ))}
           </ul>
@@ -54,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
       </header>
       <div
         className={`fixed w-[75%] h-full flex justify-center py-36 px-8 top-0 right-0 backdrop-blur-sm bg-white/2 translate-x-full transition-transform ease-in-out delay-200 duration-500 ${
-          isModalOpen && "translate-x-0"
+          isModalOpen && "!translate-x-0"
         }`}
       >
         <ul className="flex flex-col gap-y-4 text-xl cursor-pointer w-full">

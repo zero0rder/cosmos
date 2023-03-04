@@ -16,7 +16,7 @@ const Destinations: React.FC<DestinationsProps> = ({}) => {
           </div>
         </div>
         <div className="w-full">
-          <div className="flex flex-col md:flex-row flex-wrap pb-8 md:pb-16">
+          <div className="flex flex-col md:flex-row flex-wrap md:h-[33rem] pb-8 md:pb-16">
             <nav className="flex justify-center md:justify-end w-full my-4 md:mb-12 md:mt-0">
               <ul className="flex gap-x-4 md:gap-x-6 md:w-1/2 text-[1rem] md:text-xl">
                 {Dest_Data.map((d, i) => (
@@ -26,7 +26,13 @@ const Destinations: React.FC<DestinationsProps> = ({}) => {
                     onClick={() => setIndex(i)}
                   >
                     <span className="mr-2">0{i}</span>
-                    <span className="tracking-[0.2rem]">{d.name}</span>
+                    <span
+                      className={`tracking-[0.2rem] ${
+                        index === i && "border-b-2 pb-1"
+                      }`}
+                    >
+                      {d.name}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -40,7 +46,7 @@ const Destinations: React.FC<DestinationsProps> = ({}) => {
               <h2 className="font-['Bellefair'] text-[4rem] md:text-8xl text-white text-center md:text-left tracking-[0.25rem] uppercase">
                 {Dest_Data[index].name}
               </h2>
-              <p className="text-[1rem] md:text-xl text-center md:text-left">
+              <p className="text-[1rem] md:text-xl text-center md:text-left h-28 md:h-auto overflow-scroll">
                 {Dest_Data[index].description}
               </p>
               <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-y-0 gap-x-5 text-2xl py-4 border-t">
