@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, 
+body, 
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body{ 
+  background-color: hsl(230 35% 7%);
+  background-image: url('./assets/space_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main > section {
+  padding-top: 10rem;
+}
+
+.home,
+.dest,
+.crew,
+.transport {
+  color: hsl(231 77% 90%);
+}
+
+@media (max-width: 768px)  {
+  body {
+    background-image: url('./assets/space_mobile.jpg');
+  }
+  
+}
